@@ -1,0 +1,285 @@
+/*
+ Theme Name:   VDC Sandbox GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--blue: #275197;
+	--gold: #f0b336;
+	--red: #da3d20;
+	--footer-gray: #b9b6b6;
+}
+.separate-containers .inside-article {
+padding-top: 0;	
+}
+/* Header width */
+body .grid-container {
+	max-width: 1600px;
+}
+/* Primary menu */
+.main-navigation {
+	background-color: var(--blue,blue);
+	text-align: center;
+}
+.main-navigation .main-nav ul li > a {
+	color: white;
+}
+.main-navigation ul li.main-hover:hover > a {
+	color: var(--gold,yellow);
+	background-color: var(--blue,blue);
+}
+/* Secondary menu */
+.secondary-navigation ul {
+padding-right: 2rem;
+}
+.secondary-navigation .main-nav ul li a {
+	background: var(--red,red);
+    margin: 20px;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.secondary-navigation .main-nav  ul li.secondary-hover:hover > a {
+	background-color: var(--blue,blue);
+}
+/* Secondary menu background */
+#menu-secondary {
+	background: var(--gold,yellow);
+}
+/* Get rid of gap between header and content */
+#main {
+	margin: 0;
+}
+/* Hero image title */
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 2px 0 black;
+	display: block; 
+}
+h1.hero-title {
+	display: inline-block;
+}
+h2 {
+	color: var(--blue,blue);
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+/* Format titles on blog single post */
+.single-post h1 {
+	color: var(--blue,blue);
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-shadow: none;
+	padding-top: 1rem;
+	text-align: center;
+}
+.single-post .entry-content {
+	margin-top: 1rem;
+}
+/* For gray box background
+Vbox-shadow: -5px -3px 5px var(--light-gray,gray);
+	background-color: var(--light-gray,gray);
+*/
+p.hero-title {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	display: table-cell;
+}
+.welcome-image img {
+	margin: 20px 20px 20px 0;
+}
+.wp-block-columns .wp-block-column {
+    margin-bottom: 2em !important;
+}
+.wp-block-cover {
+    padding: 0;
+}
+/* Center the button in the home cover grid */
+.wp-block-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Adjust position of text in the home cover grid */
+.wp-block-cover__inner-container {
+	margin-top: 200px;
+}
+/* In order for this override to work, the button color has to be preset in the block */
+.home-button-1 .has-vivid-cyan-blue-background-color {
+	background-color: var(--blue,blue);
+}
+.home-button-1 .has-vivid-cyan-blue-background-color:hover {
+	color: var(--gold,gold);
+}
+/* Staff cards */
+.about .board-card {
+	background: var(--gold,orange);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* LEARNS page colors */
+.learns-project .levels-background .wp-block-column {
+	background-color: var(--blue,blue);
+	display: flex;
+	flex-direction: column;
+}
+.volunteer-options .volunteer-background,
+.learns-project .learns-background,
+.learns-project h3.levels-background,
+.learns-project .support-background {
+	background: var(--gold, orange);
+	color: white;
+}
+.learns-project p.levels-background {
+	background: var(--blue,blue);
+	color: white;
+}
+.volunteer-options h2.volunteer-background,
+.learns-project h2.learns-background,
+.learns-project h3.levels-background,
+.learns-project h2.support-background,
+.learns-project p.support-background { 
+	color: white;
+	margin-bottom: 0;
+	padding: .5rem 0 .5rem 0;
+}
+.levels-background .wp-block-column p.levels-background {
+	margin: auto auto;
+}
+/* Living with Diabetes page colors */
+.living-with-diabetes .living-background .wp-block-column {
+	background-color: var(--blue,blue);
+	display: flex;
+	flex-direction: column;
+}
+
+.living-with-diabetes h2.living-background,
+.living-with-diabetes .support-background {
+	background: var(--gold, orange);
+	color: white;
+	font-size: xx-large;
+}
+.living-with-diabetes h4.living-background,
+.living-with-diabetes p.living-background {
+	background: var(--blue,blue);
+	color: white;
+	font-size: large;
+	margin-top: .5rem;
+}
+.living-with-diabetes h2.living-background { 
+	color: white;
+	margin-bottom: 0;
+	padding: .5rem 0 .5rem 0;
+}
+.living-with-diabetes h5 a {
+	color: white;
+}
+.living-background .wp-block-column p.living-background {
+	margin: auto auto;
+}
+/* Advocacy page colors */
+.advocacy .wp-block-column.advocacy-background {
+	background: lightgray;
+	display: flex;
+	flex-direction: column;
+}
+.advocacy .wp-block-column.advocacy-background img {
+	background: var(--gold,gold);
+	border-radius: 50%;
+	flex: 2;
+}
+.advocacy .wp-block-column.advocacy-background h3 {
+	flex: 2;
+}
+.advocacy .wp-block-column.advocacy-background p {
+	background: var(--gold,gold);
+	color: white;
+	margin-bottom: 0;
+	flex: 1;
+}
+.advocacy .wp-block-column.advocacy-background p a {
+	color: white;
+}
+.advocacy .wp-block-column.advocacy-background .wp-block-image {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+.advocacy .wp-block-column.
+.about .board-card .board-title,
+.about .board-card .board-position {
+	color: white;
+	font-weight: 800;
+}
+.about .board-card p.board-title,
+.about .board-card p.board-position {
+	margin-bottom: 0;
+}
+/* Mission and vision on about page */
+.about .mission-vision-background.has-vivid-cyan-blue-background-color.has-background {
+	background-color: var(--blue,blue);
+	padding-bottom: 0;
+}
+.about .mission-vision {
+	font-weight: 800;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.about .mission-vision h2 {
+	font-weight: 800;
+	border-bottom: 2px solid white;
+	padding-bottom: 1rem;
+	display: inline-block;
+}
+/* Accomplishments block */
+.about h2.accomplish-title {
+	color: var(--blue,blue);
+	font-weight: 800;
+}
+.about ul.accomplish-list {
+	line-height: 2rem;
+}
+.about .scope {
+	background: var(--gold,yellow);
+}
+.about h2.scope {
+	color: white;
+	font-weight: 800;
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+}
+.about p.scope {
+	color: white;
+	font-weight: 500;
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+}
+.contact h1 {
+	color: var(--blue,blue);
+	font-weight: 800;
+}
+.contact h3 {
+	color: var(--gold,gold);
+	margin-bottom: .2rem;
+}
+/* Mobile hamburger menu color */
+.mobile-menu,
+button.menu-toggle {
+	color: white;
+}
+/* Donate button stying */
+.donate form {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	color: white;
+}
